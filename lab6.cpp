@@ -12,9 +12,17 @@ void outputArrayData(double*);
 double sumArray(double*);
 
 int main(){
-    double *numbers;
+    double *numbers = nullptr;
     numbers = new double [SIZE];
     enterArrayData(numbers);
+
+    cout << "Outputting array elements: ";
+    outputArrayData(numbers);
+
+    double total;
+    total = sumArray(numbers);
+    cout << "Sum of values: " << total << endl;
+    
 }
 
 void enterArrayData(double *arr){
