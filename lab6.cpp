@@ -20,7 +20,18 @@ void enterArrayData(double *arr){
     for (int i =0; i< SIZE; i++){
         cout << " #Element #" << i << ": ";
         cin >> *(arr + i);
-        
+
     }
-    cout << endl;
+    cout << "Data entry complete." << endl;
+}
+
+void outoutputArrayData(double *arr){
+    for(int i=0;i<SIZE;i++){
+        cout << *(arr + i) << endl;
+    }
+}
+
+double sumArray(double *arr){
+    double sum = 0;
+
 }
