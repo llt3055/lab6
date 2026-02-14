@@ -7,17 +7,20 @@ using namespace std;
 const int SIZE = 5;
 
 //FUNCTION PROTOTYPE
-void enterArrayData(double*, int);
-void outputArrayData(double*, int);
+void enterArrayData(double*);
+void outputArrayData(double*);
 double sumArray(double*);
 
 int main(){
 
 }
 
-void enterArrayData(double *arr, int size){
+void enterArrayData(double *arr){
     cout << "Data entry for the array:" << endl;
-    for (int i =0; i< size; i++){
+    for (int i =0; i< SIZE; i++){
+        cout << " #Element #" << i << ": ";
+        cin >> *(arr + i);
         
     }
+    cout << endl;
 }
