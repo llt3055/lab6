@@ -12,7 +12,9 @@ void outputArrayData(double*);
 double sumArray(double*);
 
 int main(){
-
+    double *numbers;
+    numbers = new double [SIZE];
+    enterArrayData(numbers);
 }
 
 void enterArrayData(double *arr){
@@ -33,5 +35,8 @@ void outoutputArrayData(double *arr){
 
 double sumArray(double *arr){
     double sum = 0;
-
+    for (int i=0; i<SIZE;i++){
+        sum += *(arr + i);
+    }
+    return sum;
 }
