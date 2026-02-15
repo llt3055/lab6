@@ -22,7 +22,11 @@ int main(){
     double total;
     total = sumArray(numbers);
     cout << "Sum of values: " << total << endl;
-    
+
+    delete[] numbers;
+    numbers = nullptr;
+    return 0;
+
 }
 
 void enterArrayData(double *arr){
